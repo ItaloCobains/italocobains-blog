@@ -30,9 +30,43 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+minima:
+  # skin: classic
+  skin: solarized-dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
+author:
+  name: John Smith
+  email: "john.smith@foobar.com"
+show_excerpts: true
+
+header_pages:
+  - about.md
+  - newsletter.md
+
 plugins:
   - jekyll-feed
+  - jekyll-target-blank
+  - jekyll-seo-tag
+  - jekyll-og-image
+  - jekyll-sitemap
+
+og_image:
+  output_dir: "assets/images/og"
+  image: "/assets/images/igor.jpeg"
+  domain: "igor.works"
+  border_bottom:
+    width: 20
+    fill:
+      - "#820C02"
+      - "#A91401"
+      - "#D51F06"
+      - "#DE3F24"
+      - "#EDA895"
+
+tag_page_layout: tag_page
+tag_page_dir: tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
